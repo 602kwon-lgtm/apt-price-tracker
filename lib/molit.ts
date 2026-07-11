@@ -56,8 +56,11 @@ function normalize(s: string): string {
   return s.replace(/\s+/g, "").toLowerCase();
 }
 
-export function matchesComplex(aptNm: string, keyword: string): boolean {
-  return normalize(String(aptNm)).includes(normalize(keyword));
+export function matchesComplex(aptNm: string, keyword: string, excludeKeyword?: string): boolean {
+  const normalized = normalize(String(aptNm));
+  if (!normalized.includes(normalize(keyword))) return false;
+  if (excludeKeyword && normalized.includes(normalize(excludeKeyword))) return false;
+  return true;
 }
 
 export async function fetchSaleTrades(
@@ -65,9 +68,10 @@ export async function fetchSaleTrades(
   lawdCd: string,
   dealYmd: string,
   aptNameKeyword: string,
+  excludeKeyword?: string,
 ): Promise<Trade[]> {
   const items = await callApi(TRADE_URL, serviceKey, lawdCd, dealYmd);
-  const filtered = items.filter((it) => matchesComplex(String(it.aptNm ?? ""), aptNameKeyword));
+  const filtered = items.filter((it) => matchesComplex(String(it.aptNm ?? ""), aptNameKeyword, excludeKeyword));
 
   return filtered.map((it) => {
     const y = String(it.dealYear).padStart(4, "0");
@@ -93,9 +97,10 @@ export async function fetchRentTrades(
   lawdCd: string,
   dealYmd: string,
   aptNameKeyword: string,
+  excludeKeyword?: string,
 ): Promise<Trade[]> {
   const items = await callApi(RENT_URL, serviceKey, lawdCd, dealYmd);
-  const filtered = items.filter((it) => matchesComplex(String(it.aptNm ?? ""), aptNameKeyword));
+  const filtered = items.filter((it) => matchesComplex(String(it.aptNm ?? ""), aptNameKeyword, excludeKeyword));
 
   return filtered.map((it) => {
     const y = String(it.dealYear).padStart(4, "0");

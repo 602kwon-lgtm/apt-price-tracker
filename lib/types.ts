@@ -21,6 +21,7 @@ export interface ComplexConfig {
   id: string;
   name: string;
   aptNameKeyword: string;
+  excludeKeyword?: string;
   sido: string;
   sigungu: string;
   dong: string;

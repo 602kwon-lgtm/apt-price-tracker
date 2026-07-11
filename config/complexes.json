@@ -124,5 +124,48 @@
     ],
     "naverLandUrl": "https://naver.me/574R22al",
     "kbLandUrl": "https://kbland.kr/se/c/12029"
+  },
+  {
+    "id": "imun-daelim-eplus-world",
+    "name": "이문e-편한세상",
+    "aptNameKeyword": "대림e-편한세상",
+    "excludeKeyword": "임대",
+    "sido": "서울특별시",
+    "sigungu": "동대문구",
+    "dong": "이문동",
+    "lawdCd": "11230",
+    "pros": [
+      "1,378세대 규모로 건폐율이 낮아 단지 내 산책로·녹지가 잘 조성됨",
+      "주차 공간이 넉넉해 주차난이 적은 편",
+      "신이문역 역세권, 평지 입지에 초등학교를 품고 있음",
+      "서대문·서울역·용산·가산디지털단지 등 업무지구 접근성이 좋음"
+    ],
+    "cons": [
+      "세대 엘리베이터가 지하주차장까지 바로 연결되지 않는 동이 있음",
+      "저층은 채광이 부족하고 겨울철 추위를 타는 편"
+    ],
+    "naverLandUrl": "https://naver.me/5jXecLdc",
+    "kbLandUrl": "https://kbland.kr/se/c/12003"
+  },
+  {
+    "id": "imun-ssangyong",
+    "name": "이문쌍용아파트",
+    "aptNameKeyword": "쌍용",
+    "excludeKeyword": "임대",
+    "sido": "서울특별시",
+    "sigungu": "동대문구",
+    "dong": "이문동",
+    "lawdCd": "11230",
+    "pros": [
+      "1,318세대 15개동 규모의 대단지",
+      "대림e-편한세상과 같은 이문동 권역으로 생활 인프라 공유",
+      "2000년 11월 준공으로 이문e-편한세상보다 신축급"
+    ],
+    "cons": [
+      "준공 25년 이상으로 구축 이슈 가능성",
+      "역세권과는 다소 거리가 있는 편"
+    ],
+    "naverLandUrl": "https://naver.me/xNpg64L2",
+    "kbLandUrl": "https://kbland.kr/se/c/1246"
   }
 ]

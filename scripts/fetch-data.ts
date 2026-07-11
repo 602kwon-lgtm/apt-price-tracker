@@ -67,8 +67,8 @@ async function main() {
     for (const ym of yearMonths) {
       try {
         const [sale, rent] = await Promise.all([
-          fetchSaleTrades(serviceKey, complex.lawdCd, ym, complex.aptNameKeyword),
-          fetchRentTrades(serviceKey, complex.lawdCd, ym, complex.aptNameKeyword),
+          fetchSaleTrades(serviceKey, complex.lawdCd, ym, complex.aptNameKeyword, complex.excludeKeyword),
+          fetchRentTrades(serviceKey, complex.lawdCd, ym, complex.aptNameKeyword, complex.excludeKeyword),
         ]);
         allTrades.push(...sale, ...rent);
         if (sale.length || rent.length) {
