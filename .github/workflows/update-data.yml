@@ -1,0 +1,40 @@
+name: Update apartment trade data
+
+on:
+  schedule:
+    # 매일 06:00 KST (UTC 21:00 전날)
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch latest trade data
+        env:
+          MOLIT_API_KEY: ${{ secrets.MOLIT_API_KEY }}
+        run: npm run fetch-data -- --months=3
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/trades
+          if git diff --cached --quiet; then
+            echo "No new data."
+          else
+            git commit -m "chore: update apartment trade data ($(date -u +%Y-%m-%d))"
+            git push
+          fi
