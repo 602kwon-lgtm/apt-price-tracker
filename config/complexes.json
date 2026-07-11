@@ -2,6 +2,7 @@
   {
     "id": "raemian-serenity-jongam",
     "name": "래미안세레니티",
+    "featured": true,
     "aptNameKeyword": "래미안세레니티",
     "sido": "서울특별시",
     "sigungu": "성북구",
@@ -189,6 +190,7 @@
   {
     "id": "imun-daelim-eplus-world",
     "name": "이문e-편한세상",
+    "featured": true,
     "aptNameKeyword": "대림e-편한세상",
     "excludeKeyword": "임대",
     "sido": "서울특별시",
@@ -249,5 +251,38 @@
     "walkMinutes": "9",
     "walkMeters": "579",
     "kakaoWalkUrl": "https://map.kakao.com/?map_type=TYPE_MAP&target=walk&rt=515245,1138790,514879,1139507&rt1=%EC%9D%B4%EB%AC%B8%EC%8C%8D%EC%9A%A9%EC%95%84%ED%8C%8C%ED%8A%B8&rt2=%EC%8B%A0%EC%9D%B4%EB%AC%B8%EC%97%AD&rtIds=,&rtTypes=,"
+  },
+  {
+    "id": "hanjin-hanwha-grandville-wolgye",
+    "name": "한진한화그랑빌",
+    "featured": true,
+    "aptNameKeyword": "한진한화그랑빌",
+    "sido": "서울특별시",
+    "sigungu": "노원구",
+    "dong": "월계동",
+    "lawdCd": "11350",
+    "pros": [
+      "3,003세대 25개동 규모의 대단지",
+      "석계역(1·6호선) 도보 9분(594m)으로 더블 역세권",
+      "주차 공간이 넉넉함(3,940대), CCTV 등 보안 시설 잘 갖춰짐",
+      "도보권에 학원가와 초등학교(서울한천초)가 있음"
+    ],
+    "cons": [
+      "준공 20년 이상으로 엘리베이터 속도가 느리고 새시 교체가 필요한 세대가 많음",
+      "단지 주변 상권·인프라가 다소 부족한 편"
+    ],
+    "news": [
+      "광운대역세권 개발사업: 물류부지 14.8만㎡를 최고 49층 업무·상업 복합시설 + 약 2,500세대 주상복합으로 개발",
+      "GTX-C 개통(2028년 목표) 시 광운대역에서 삼성역 9분대 진입",
+      "동북선 경전철 개통 예정(2027년)으로 왕십리·강북 접근성 개선",
+      "동부간선도로 지하화 사업 추진"
+    ],
+    "naverLandUrl": "https://naver.me/GcA5fAG8",
+    "kbLandUrl": "https://kbland.kr/se/c/946",
+    "address": "서울특별시 노원구 마들로 31",
+    "nearestStation": "석계역",
+    "walkMinutes": "9",
+    "walkMeters": "594",
+    "kakaoWalkUrl": "https://map.kakao.com/?map_type=TYPE_MAP&target=walk&rt=515134,1143953,514499,1143176&rt1=%ED%95%9C%EC%A7%84%ED%95%9C%ED%99%94%EA%B7%B8%EB%9E%91%EB%B9%8C&rt2=%EC%84%9D%EA%B3%84%EC%97%AD&rtIds=,&rtTypes=,"
   }
 ]

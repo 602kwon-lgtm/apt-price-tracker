@@ -20,6 +20,7 @@ export interface Trade {
 export interface ComplexConfig {
   id: string;
   name: string;
+  featured?: boolean;
   aptNameKeyword: string;
   excludeKeyword?: string;
   sido: string;

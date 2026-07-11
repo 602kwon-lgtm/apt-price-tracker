@@ -3,7 +3,9 @@ import { loadComplexes } from "@/lib/complexes";
 import { readTrades } from "@/lib/store";
 
 export default function HomePage() {
-  const complexes = loadComplexes();
+  const complexes = [...loadComplexes()].sort(
+    (a, b) => a.sigungu.localeCompare(b.sigungu, "ko") || a.name.localeCompare(b.name, "ko"),
+  );
 
   return (
     <main>
@@ -29,6 +31,12 @@ export default function HomePage() {
                 <span className="registry-name">
                   <span className="registry-index">{String(i + 1).padStart(2, "0")}</span>
                   {c.name}
+                  {c.featured && (
+                    <span className="star" title="눈여겨보는 단지">
+                      {" "}
+                      ⭐
+                    </span>
+                  )}
                 </span>
                 <span className="registry-place">
                   📍 {c.sido.replace("특별시", "").replace("광역시", "")} {c.sigungu} {c.dong}
