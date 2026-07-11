@@ -32,7 +32,7 @@ export function mergeAndWriteTrades(complexId: string, incoming: Trade[]): { tot
     }
   }
 
-  const merged = Array.from(seen.values()).sort((a, b) => (a.dealDate < b.dealDate ? 1 : -1));
+  const merged = Array.from(seen.values()).sort((a, b) => (a.dealDate < b.dealDate ? 1 : a.dealDate > b.dealDate ? -1 : 0));
 
   fs.mkdirSync(DATA_DIR, { recursive: true });
   fs.writeFileSync(filePath(complexId), JSON.stringify(merged, null, 2), "utf-8");
