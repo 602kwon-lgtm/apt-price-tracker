@@ -33,16 +33,16 @@ export default function PriceChart({
   return (
     <ResponsiveContainer width="100%" height={280}>
       <LineChart data={formatted} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
-        <CartesianGrid stroke="var(--gridline)" vertical={false} />
+        <CartesianGrid stroke="var(--line)" vertical={false} />
         <XAxis
           dataKey="dealDate"
-          tick={{ fill: "var(--text-muted)", fontSize: 12 }}
-          axisLine={{ stroke: "var(--gridline)" }}
+          tick={{ fill: "var(--ink-muted)", fontSize: 12, fontFamily: "var(--font-mono)" }}
+          axisLine={{ stroke: "var(--line-strong)" }}
           tickLine={false}
           minTickGap={30}
         />
         <YAxis
-          tick={{ fill: "var(--text-muted)", fontSize: 12 }}
+          tick={{ fill: "var(--ink-muted)", fontSize: 12, fontFamily: "var(--font-mono)" }}
           axisLine={false}
           tickLine={false}
           width={48}
@@ -52,9 +52,10 @@ export default function PriceChart({
           labelFormatter={(label) => label}
           contentStyle={{
             background: "var(--surface)",
-            border: "1px solid var(--border)",
-            borderRadius: 8,
+            border: "1px solid var(--line-strong)",
+            borderRadius: 4,
             fontSize: 13,
+            fontFamily: "var(--font-mono)",
           }}
         />
         <Line

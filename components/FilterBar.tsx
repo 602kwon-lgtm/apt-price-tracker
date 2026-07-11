@@ -115,8 +115,8 @@ export default function FilterBar({
         ))}
       </div>
 
-      <p className="muted" style={{ marginTop: 12, marginBottom: 0, fontSize: 13 }}>
-        필터링된 거래량: <strong style={{ color: "var(--text-primary)" }}>{resultCount}건</strong>
+      <p className="result-count">
+        필터링된 거래량: <strong>{resultCount}건</strong>
       </p>
     </div>
   );

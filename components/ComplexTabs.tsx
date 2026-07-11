@@ -8,9 +8,9 @@ import TradeTable from "./TradeTable";
 import FilterBar, { applyFilters, useAreaGroups } from "./FilterBar";
 
 const TABS = [
-  { key: "sale", label: "매매", color: "var(--series-sale)" },
-  { key: "jeonse", label: "전세", color: "var(--series-jeonse)" },
-  { key: "wolse", label: "월세", color: "var(--series-wolse)" },
+  { key: "sale", label: "매매", color: "var(--jade)" },
+  { key: "jeonse", label: "전세", color: "var(--gold)" },
+  { key: "wolse", label: "월세", color: "var(--wine)" },
 ] as const;
 
 const EMPTY_FILTERS: TradeFilters = {
@@ -43,6 +43,7 @@ export default function ComplexTabs({ trades }: { trades: Trade[] }) {
           return (
             <button
               key={t.key}
+              data-kind={t.key}
               className={`tab${tab === t.key ? " active" : ""}`}
               onClick={() => setTab(t.key)}
             >
