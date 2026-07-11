@@ -19,7 +19,10 @@ export default function HomePage() {
       <div className="registry">
         {complexes.map((c, i) => {
           const trades = readTrades(c.id);
-          const latestSale = trades.find((t) => t.type === "sale");
+          // 20평형대(전용 59㎡ 안팎) 매물 위주로 보는 중이라 홈 화면 요약도 그 크기로 맞춘다.
+          const latestSale =
+            trades.find((t) => t.type === "sale" && t.excluUseAr >= 55 && t.excluUseAr < 70) ??
+            trades.find((t) => t.type === "sale");
           return (
             <Link key={c.id} href={`/complex/${c.id}`} className="registry-item">
               <div className="registry-row">
@@ -37,7 +40,8 @@ export default function HomePage() {
                 </span>
                 {latestSale && (
                   <span className="chip chip-jade">
-                    💰 최근 매매 <strong>{(latestSale.amount / 10000).toFixed(2)}억</strong> ({latestSale.dealDate})
+                    💰 최근 매매(20평형대) <strong>{(latestSale.amount / 10000).toFixed(2)}억</strong> ·{" "}
+                    {latestSale.excluUseAr}㎡ ({latestSale.dealDate})
                   </span>
                 )}
               </div>

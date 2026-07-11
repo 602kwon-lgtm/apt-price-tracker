@@ -25,10 +25,6 @@ export default function ComplexPage({ params }: { params: { id: string } }) {
     complex.naverLandUrl ?? `https://search.naver.com/search.naver?query=${encodeURIComponent(`${complex.name} 아파트 시세`)}`;
   const kbUrl =
     complex.kbLandUrl ?? `https://search.naver.com/search.naver?query=${encodeURIComponent(`${complex.name} KB부동산 시세`)}`;
-  const walkMapUrl =
-    complex.address && complex.nearestStation
-      ? `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(complex.address)}&destination=${encodeURIComponent(complex.nearestStation)}&travelmode=walking`
-      : undefined;
 
   return (
     <main>
@@ -44,12 +40,13 @@ export default function ComplexPage({ params }: { params: { id: string } }) {
             <>
               {" "}
               · 🚇 {complex.nearestStation} 도보 {complex.walkMinutes}분
-              {walkMapUrl && (
+              {complex.walkMeters && ` (${complex.walkMeters}m)`}
+              {complex.kakaoWalkUrl && (
                 <>
                   {" "}
                   (
-                  <a href={walkMapUrl} target="_blank" rel="noopener noreferrer">
-                    구글맵 경로
+                  <a href={complex.kakaoWalkUrl} target="_blank" rel="noopener noreferrer">
+                    카카오맵 경로
                   </a>
                   )
                 </>
@@ -100,7 +97,7 @@ export default function ComplexPage({ params }: { params: { id: string } }) {
         </a>
       </div>
 
-      {(complex.pros?.length || complex.cons?.length) && (
+      {(complex.pros?.length || complex.cons?.length || complex.news?.length) && (
         <div className="side-info">
           {complex.pros && complex.pros.length > 0 && (
             <div className="card pros-cons-card pros">
@@ -118,6 +115,16 @@ export default function ComplexPage({ params }: { params: { id: string } }) {
               <ul>
                 {complex.cons.map((c, i) => (
                   <li key={i}>{c}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {complex.news && complex.news.length > 0 && (
+            <div className="card pros-cons-card news">
+              <h3>📰 호재</h3>
+              <ul>
+                {complex.news.map((n, i) => (
+                  <li key={i}>{n}</li>
                 ))}
               </ul>
             </div>

@@ -28,9 +28,12 @@ export interface ComplexConfig {
   lawdCd: string;
   pros?: string[];
   cons?: string[];
+  news?: string[];
   naverLandUrl?: string;
   kbLandUrl?: string;
   address?: string;
   nearestStation?: string;
   walkMinutes?: string;
+  walkMeters?: string;
+  kakaoWalkUrl?: string;
 }

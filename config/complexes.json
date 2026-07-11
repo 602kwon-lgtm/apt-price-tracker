@@ -10,17 +10,24 @@
     "pros": [
       "거주민 평점이 종암동 평균보다 높고 특히 치안 평점이 우수함",
       "층간소음 이슈가 적은 편",
-      "반려동물 키우기 좋은 환경 (도보 20분 내 동물병원 다수)",
+      "반려동물 키우기 좋은 환경 (도보권 동물병원 다수)",
       "봄철 벚꽃이 피는 중앙 정원이 아름다움"
     ],
     "cons": [
-      "단지 인근에 지하철역이 없어 입지 평점이 상대적으로 낮음"
+      "가장 가까운 길음역(4호선)까지 도보 20분(1.1km)으로 사실상 비역세권"
+    ],
+    "news": [
+      "동북선 경전철 종암경찰서역 2027년 11월 개통 예정 (단지 인근)",
+      "동북선 개통 시 왕십리 경유로 2·5호선, 수인분당선 환승 개선",
+      "인근 광운대역세권 개발 및 GTX-C 연계 기대감"
     ],
     "naverLandUrl": "https://fin.land.naver.com/map?layer=NobwRAlgJmBcYGMD2BbADgGwKYA8D6UWALgIYQZgA0YaJATiSgM5zjLrY4CSM8ATAFYAHHwDsYAL7UmWeggAWABXqMWscKQBGcMEQYA7JiQREISfZIkBdIA&center=3zjHxA-2ANquy&zoom=14.99585123356702",
     "kbLandUrl": "https://kbland.kr/c/15985?xy=37.5993665,127.026085,16",
     "address": "37.5993665,127.026085",
     "nearestStation": "길음역",
-    "walkMinutes": "12"
+    "walkMinutes": "20",
+    "walkMeters": "1100",
+    "kakaoWalkUrl": "https://map.kakao.com/?map_type=TYPE_MAP&target=walk&rt=506855,1138799,505532,1139950&rt1=%EB%9E%98%EB%AF%B8%EC%95%88%EC%84%B8%EB%A0%88%EB%8B%88%ED%8B%B0&rt2=%EA%B8%B8%EC%9D%8C%EC%97%AD&rtIds=,&rtTypes=,"
   },
   {
     "id": "dapsimni-cheongsol-usung",
@@ -39,13 +46,21 @@
     "cons": [
       "방 구조가 좁고 수납공간이 부족한 편",
       "일부 저층 동은 엘리베이터가 없어 계단 이용",
-      "지하철역까지 거리가 있어 도보 이용이 불편함"
+      "가장 가까운 답십리역(5호선)까지 도보 29분(1.7km)으로 도보 이용은 사실상 어려움"
+    ],
+    "news": [
+      "전농·답십리 재정비촉진지구 뉴타운 개발 (약 9천 세대 규모)",
+      "전농8구역 재개발 확정 (2024.8 롯데건설 시공사 선정, 1,760세대)",
+      "답십리 일대 45층 2,250세대 대단지 개발 계획",
+      "청량리역 광역환승센터(GTX-B·C, KTX 등) 개발 수혜권"
     ],
     "naverLandUrl": "https://naver.me/G0pE5tMQ",
     "kbLandUrl": "https://kbland.kr/se/c/1224",
     "address": "서울특별시 동대문구 전농로10길 20",
     "nearestStation": "답십리역",
-    "walkMinutes": "16"
+    "walkMinutes": "29",
+    "walkMeters": "1700",
+    "kakaoWalkUrl": "https://map.kakao.com/?map_type=TYPE_MAP&target=walk&rt=513270,1131979,511609,1129847&rt1=%EB%8B%B5%EC%8B%AD%EB%A6%AC%EC%B2%AD%EC%86%94%EC%9A%B0%EC%84%B1&rt2=%EB%8B%B5%EC%8B%AD%EB%A6%AC%EC%97%AD&rtIds=,&rtTypes=,"
   },
   {
     "id": "raemian-crecielle-jongam",
@@ -56,20 +71,28 @@
     "dong": "종암동",
     "lawdCd": "11290",
     "pros": [
-      "4호선 + 동북선(2027 예정) 더블 역세권으로 교통이 우수함",
+      "2027년 예정인 동북선 종암경찰서역이 개통되면 교통 여건이 크게 개선될 전망",
       "대로변 인접에도 소음·분진이 적어 조용한 편",
       "래미안 브랜드 단지 특유의 조경·관리 상태가 우수",
       "이비인후과·내과·소아과 등 생활 인프라(병원)가 풍부"
     ],
     "cons": [
+      "현재는 가장 가까운 길음역(4호선)까지 도보 16분(882m)으로 역세권은 아님",
       "단지 내 경사(오르막)가 있어 겨울철 미끄럽고 유모차 이용이 불편",
       "동에 따라 채광 편차가 있는 편"
+    ],
+    "news": [
+      "동북선 경전철 종암경찰서역 2027년 11월 개통 예정 (단지 인근)",
+      "동북선 개통 시 왕십리 경유로 2·5호선, 수인분당선 환승 개선",
+      "인근 광운대역세권 개발 및 GTX-C 연계 기대감"
     ],
     "naverLandUrl": "https://naver.me/FORqUHDX",
     "kbLandUrl": "https://kbland.kr/se/c/12026",
     "address": "서울특별시 성북구 종암로25길 30",
     "nearestStation": "길음역",
-    "walkMinutes": "10"
+    "walkMinutes": "16",
+    "walkMeters": "882",
+    "kakaoWalkUrl": "https://map.kakao.com/?map_type=TYPE_MAP&target=walk&rt=506657,1139282,505532,1139950&rt1=%EB%9E%98%EB%AF%B8%EC%95%88%ED%81%AC%EB%A6%AC%EC%8B%9C%EC%97%98&rt2=%EA%B8%B8%EC%9D%8C%EC%97%AD&rtIds=,&rtTypes=,"
   },
   {
     "id": "jongam-ipark-1cha",
@@ -80,19 +103,27 @@
     "dong": "종암동",
     "lawdCd": "11290",
     "pros": [
-      "4호선 길음역까지 도보 7분으로 교통이 편리함",
+      "8개 단지 중 역까지 도보 거리가 가장 짧은 편(길음역 도보 12분)",
       "정방배치·단지 내 평탄화로 쾌적한 동선",
       "대형마트(이마트)가 도보권으로 가까움",
       "적당한 세대수·구조로 리모델링 추진 여건이 양호하다는 평"
     ],
     "cons": [
+      "그래도 길음역(4호선)까지 도보 12분(703m)으로 초역세권은 아님",
       "준공 20년이 넘어 새시 등 개별 수선이 필요한 세대가 많음"
+    ],
+    "news": [
+      "동북선 경전철 종암경찰서역 2027년 11월 개통 예정",
+      "동북선 개통 시 왕십리 경유로 2·5호선, 수인분당선 환승 개선",
+      "적당한 세대 규모로 리모델링 사업 추진 여건이 양호하다는 평"
     ],
     "naverLandUrl": "https://naver.me/FdqpM9Zr",
     "kbLandUrl": "https://kbland.kr/se/c/12550",
     "address": "서울특별시 성북구 종암로21길 127",
     "nearestStation": "길음역",
-    "walkMinutes": "7"
+    "walkMinutes": "12",
+    "walkMeters": "703",
+    "kakaoWalkUrl": "https://map.kakao.com/?map_type=TYPE_MAP&target=walk&rt=506593,1139712,505532,1139950&rt1=%EC%95%84%EC%9D%B4%ED%8C%8C%ED%81%AC%EC%A2%85%EC%95%94%EB%8F%991%EC%B0%A8&rt2=%EA%B8%B8%EC%9D%8C%EC%97%AD&rtIds=,&rtTypes=,"
   },
   {
     "id": "jeonnong-sk",
@@ -104,19 +135,25 @@
     "lawdCd": "11230",
     "pros": [
       "1,830세대 대단지로 커뮤니티·관리가 안정적",
-      "버스 노선이 많고 배차 간격이 짧음",
-      "답십리역(5호선)·청량리역(1호선)을 버스로 짧게 환승 가능"
+      "버스 노선이 많고 배차 간격이 짧음"
     ],
     "cons": [
-      "도보권에 지하철역이 없어 버스 의존도가 높음",
+      "가장 가까운 청량리역(1호선 등)까지 도보 26분(1.5km)으로 버스 의존도가 높음",
       "준공 25년 이상으로 층간소음 등 구축 이슈가 있는 편",
       "겨울철 난방비 부담이 있고 주차 공간이 부족한 편"
+    ],
+    "news": [
+      "전농·답십리 재정비촉진지구 뉴타운 개발 (약 9천 세대 규모)",
+      "전농8구역 재개발 확정 (2024.8 롯데건설 시공사 선정, 1,760세대)",
+      "청량리역 광역환승센터(GTX-B·C, KTX, 분당선 등) 개발 수혜권"
     ],
     "naverLandUrl": "https://naver.me/xAfg8eHl",
     "kbLandUrl": "https://kbland.kr/se/c/1218",
     "address": "서울특별시 동대문구 사가정로 148",
     "nearestStation": "청량리역",
-    "walkMinutes": "15"
+    "walkMinutes": "26",
+    "walkMeters": "1500",
+    "kakaoWalkUrl": "https://map.kakao.com/?map_type=TYPE_MAP&target=walk&rt=513353,1132530,510542,1133452&rt1=%EC%A0%84%EB%86%8DSK%EC%95%84%ED%8C%8C%ED%8A%B8&rt2=%EC%B2%AD%EB%9F%89%EB%A6%AC%EC%97%AD&rtIds=,&rtTypes=,"
   },
   {
     "id": "wolgok-doosan-we-ve",
@@ -128,20 +165,26 @@
     "lawdCd": "11290",
     "pros": [
       "2,197세대 30개동 대단지로 조경·커뮤니티 시설이 잘 갖춰짐",
-      "6호선 월곡역 도보권, 4호선 미아사거리역도 인근",
       "단지 내 마트와 주변 대형마트(홈플러스·이마트) 이용 편리",
       "동네가 조용하고 안전한 편, 인근 초등학교 접근성 좋음"
     ],
     "cons": [
+      "가장 가까운 월곡역(6호선)까지 도보 17분(1.1km)으로 역세권은 아님",
       "단지가 언덕 지형 위에 있어 일부 구간 경사가 있음",
       "일부 동은 지하주차장과 연결되지 않아 짐이 많을 때 불편",
       "준공 20년 이상으로 건물 노후도가 있는 편"
+    ],
+    "news": [
+      "동북선 개통 시 월곡역이 6호선+동북선 환승역이 될 예정 (2027.11)",
+      "동북선 개통으로 왕십리 경유 2·5호선, 수인분당선 접근성 개선"
     ],
     "naverLandUrl": "https://naver.me/574R22al",
     "kbLandUrl": "https://kbland.kr/se/c/12029",
     "address": "서울특별시 성북구 오패산로 46",
     "nearestStation": "월곡역",
-    "walkMinutes": "10"
+    "walkMinutes": "17",
+    "walkMeters": "1100",
+    "kakaoWalkUrl": "https://map.kakao.com/?map_type=TYPE_MAP&target=walk&rt=508405,1141056,509153,1139510&rt1=%EC%9B%94%EA%B3%A1%EB%91%90%EC%82%B0%EC%9C%84%EB%B8%8C&rt2=%EC%9B%94%EA%B3%A1%EC%97%AD&rtIds=,&rtTypes=,"
   },
   {
     "id": "imun-daelim-eplus-world",
@@ -153,20 +196,28 @@
     "dong": "이문동",
     "lawdCd": "11230",
     "pros": [
+      "신이문역(1호선) 도보 9분(523m)으로 8개 단지 중 역과 가장 가까운 편",
       "1,378세대 규모로 건폐율이 낮아 단지 내 산책로·녹지가 잘 조성됨",
       "주차 공간이 넉넉해 주차난이 적은 편",
-      "신이문역 역세권, 평지 입지에 초등학교를 품고 있음",
       "서대문·서울역·용산·가산디지털단지 등 업무지구 접근성이 좋음"
     ],
     "cons": [
       "세대 엘리베이터가 지하주차장까지 바로 연결되지 않는 동이 있음",
       "저층은 채광이 부족하고 겨울철 추위를 타는 편"
     ],
+    "news": [
+      "이문·휘경뉴타운(약 1.4만 세대) 완성 단계, 주변 신축 속속 입주(래미안라그란데·이문아이파크자이 등)",
+      "청량리역에 GTX-B·C 노선 예정, 광역환승센터 개발 진행",
+      "동부간선도로 지하화 사업 추진",
+      "홍릉 바이오 클러스터 조성"
+    ],
     "naverLandUrl": "https://naver.me/5jXecLdc",
     "kbLandUrl": "https://kbland.kr/se/c/12003",
     "address": "서울특별시 동대문구 한천로63길 10",
     "nearestStation": "신이문역",
-    "walkMinutes": "5"
+    "walkMinutes": "9",
+    "walkMeters": "523",
+    "kakaoWalkUrl": "https://map.kakao.com/?map_type=TYPE_MAP&target=walk&rt=514343,1140267,514879,1139507&rt1=%EC%9D%B4%EB%AC%B8e%ED%8E%B8%ED%95%9C%EC%84%B8%EC%83%81&rt2=%EC%8B%A0%EC%9D%B4%EB%AC%B8%EC%97%AD&rtIds=,&rtTypes=,"
   },
   {
     "id": "imun-ssangyong",
@@ -178,17 +229,25 @@
     "dong": "이문동",
     "lawdCd": "11230",
     "pros": [
+      "신이문역(1호선) 도보 9분(579m)으로 역 접근성이 좋은 편",
       "1,318세대 15개동 규모의 대단지",
-      "신이문역(1호선) 도보 4분, 외대앞역 도보 9분으로 더블 역세권",
       "대림e-편한세상과 같은 이문동 권역으로 생활 인프라 공유"
     ],
     "cons": [
       "준공 25년 이상으로 구축 이슈 가능성"
     ],
+    "news": [
+      "이문·휘경뉴타운(약 1.4만 세대) 완성 단계, 주변 신축 속속 입주(래미안라그란데·이문아이파크자이 등)",
+      "청량리역에 GTX-B·C 노선 예정, 광역환승센터 개발 진행",
+      "동부간선도로 지하화 사업 추진",
+      "홍릉 바이오 클러스터 조성"
+    ],
     "naverLandUrl": "https://naver.me/xNpg64L2",
     "kbLandUrl": "https://kbland.kr/se/c/1246",
     "address": "서울특별시 동대문구 한천로58길 47",
     "nearestStation": "신이문역",
-    "walkMinutes": "4"
+    "walkMinutes": "9",
+    "walkMeters": "579",
+    "kakaoWalkUrl": "https://map.kakao.com/?map_type=TYPE_MAP&target=walk&rt=515245,1138790,514879,1139507&rt1=%EC%9D%B4%EB%AC%B8%EC%8C%8D%EC%9A%A9%EC%95%84%ED%8C%8C%ED%8A%B8&rt2=%EC%8B%A0%EC%9D%B4%EB%AC%B8%EC%97%AD&rtIds=,&rtTypes=,"
   }
 ]

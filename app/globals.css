@@ -519,7 +519,7 @@ input[type="month"] {
 
 .side-info {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
   margin-bottom: 32px;
 }
@@ -544,6 +544,10 @@ input[type="month"] {
 
 .pros-cons-card.cons {
   background: var(--wine-soft);
+}
+
+.pros-cons-card.news {
+  background: var(--gold-soft);
 }
 
 .pros-cons-card ul {
@@ -576,6 +580,14 @@ input[type="month"] {
   position: absolute;
   left: 0;
   color: var(--wine);
+  font-weight: 700;
+}
+
+.pros-cons-card.news li::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  color: var(--gold);
   font-weight: 700;
 }
 
