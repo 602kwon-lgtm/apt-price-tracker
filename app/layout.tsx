@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
-import { Gowun_Batang, Gowun_Dodum, IBM_Plex_Mono } from "next/font/google";
+import localFont from "next/font/local";
+import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
-const display = Gowun_Batang({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-display",
-});
-
-const body = Gowun_Dodum({
-  subsets: ["latin"],
-  weight: "400",
+const nanumSquare = localFont({
+  src: [
+    { path: "./fonts/NanumSquareL.woff2", weight: "300", style: "normal" },
+    { path: "./fonts/NanumSquareR.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/NanumSquareB.woff2", weight: "700", style: "normal" },
+    { path: "./fonts/NanumSquareEB.woff2", weight: "800", style: "normal" },
+  ],
   variable: "--font-body",
 });
 
@@ -27,21 +26,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" className={`${display.variable} ${body.variable} ${mono.variable}`}>
+    <html lang="ko" className={`${nanumSquare.variable} ${mono.variable}`}>
       <body>
         <div className="site">
           <header className="masthead">
             <a href="/" className="masthead-brand">
-              <span className="seal" aria-hidden="true">
-                <svg viewBox="0 0 32 32" width="28" height="28">
-                  <rect x="2" y="2" width="28" height="28" rx="3" fill="none" stroke="currentColor" strokeWidth="1.6" />
-                  <path d="M9 21 L16 9 L23 21 Z" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-                  <line x1="9" y1="21" x2="23" y2="21" stroke="currentColor" strokeWidth="1.6" />
-                </svg>
-              </span>
-              <span className="masthead-title">실거래가 帖</span>
+              <span className="seal" aria-hidden="true">🏠</span>
+              <span className="masthead-title">아파트 실거래가 트래커</span>
             </a>
-            <span className="masthead-tag">국토교통부 공개 데이터 · 매일 자동 갱신</span>
+            <span className="masthead-tag">📡 국토교통부 공개 데이터 · 매일 자동 갱신</span>
           </header>
           <div className="container">{children}</div>
         </div>

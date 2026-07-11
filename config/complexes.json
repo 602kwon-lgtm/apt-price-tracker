@@ -6,6 +6,97 @@
     "sido": "서울특별시",
     "sigungu": "성북구",
     "dong": "종암동",
-    "lawdCd": "11290"
+    "lawdCd": "11290",
+    "pros": [
+      "거주민 평점이 종암동 평균보다 높고 특히 치안 평점이 우수함",
+      "층간소음 이슈가 적은 편",
+      "반려동물 키우기 좋은 환경 (도보 20분 내 동물병원 다수)",
+      "봄철 벚꽃이 피는 중앙 정원이 아름다움"
+    ],
+    "cons": [
+      "단지 인근에 지하철역이 없어 입지 평점이 상대적으로 낮음"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/map?layer=NobwRAlgJmBcYGMD2BbADgGwKYA8D6UWALgIYQZgA0YaJATiSgM5zjLrY4CSM8ATAFYAHHwDsYAL7UmWeggAWABXqMWscKQBGcMEQYA7JiQREISfZIkBdIA&center=3zjHxA-2ANquy&zoom=14.99585123356702",
+    "kbLandUrl": "https://kbland.kr/c/15985?xy=37.5993665,127.026085,16"
+  },
+  {
+    "id": "dapsimni-cheongsol-usung",
+    "name": "답십리청솔우성",
+    "aptNameKeyword": "청솔우성",
+    "sido": "서울특별시",
+    "sigungu": "동대문구",
+    "dong": "답십리동",
+    "lawdCd": "11230",
+    "pros": [
+      "1,500세대가 넘는 대단지로 관리 상태가 양호한 편",
+      "초·중·고가 분산돼 있어 통학 거리가 무난함",
+      "상권·병원·학원 등 생활 편의시설을 도보로 해결 가능",
+      "비역세권이라 매매가가 상대적으로 여유 있고 버스 노선이 다양함"
+    ],
+    "cons": [
+      "방 구조가 좁고 수납공간이 부족한 편",
+      "일부 저층 동은 엘리베이터가 없어 계단 이용",
+      "지하철역까지 거리가 있어 도보 이용이 불편함"
+    ],
+    "kbLandUrl": "https://kbland.kr/se/c/1224"
+  },
+  {
+    "id": "raemian-crecielle-jongam",
+    "name": "래미안크리시엘",
+    "aptNameKeyword": "래미안크리시엘",
+    "sido": "서울특별시",
+    "sigungu": "성북구",
+    "dong": "종암동",
+    "lawdCd": "11290",
+    "pros": [
+      "4호선 + 동북선(2027 예정) 더블 역세권으로 교통이 우수함",
+      "대로변 인접에도 소음·분진이 적어 조용한 편",
+      "래미안 브랜드 단지 특유의 조경·관리 상태가 우수",
+      "이비인후과·내과·소아과 등 생활 인프라(병원)가 풍부"
+    ],
+    "cons": [
+      "단지 내 경사(오르막)가 있어 겨울철 미끄럽고 유모차 이용이 불편",
+      "동에 따라 채광 편차가 있는 편"
+    ],
+    "kbLandUrl": "https://kbland.kr/se/c/12026"
+  },
+  {
+    "id": "jongam-ipark-1cha",
+    "name": "종암아이파크1차",
+    "aptNameKeyword": "아이파크종암동1차",
+    "sido": "서울특별시",
+    "sigungu": "성북구",
+    "dong": "종암동",
+    "lawdCd": "11290",
+    "pros": [
+      "4호선 길음역까지 도보 7분으로 교통이 편리함",
+      "정방배치·단지 내 평탄화로 쾌적한 동선",
+      "대형마트(이마트)가 도보권으로 가까움",
+      "적당한 세대수·구조로 리모델링 추진 여건이 양호하다는 평"
+    ],
+    "cons": [
+      "준공 20년이 넘어 새시 등 개별 수선이 필요한 세대가 많음"
+    ],
+    "kbLandUrl": "https://kbland.kr/se/c/12550"
+  },
+  {
+    "id": "jeonnong-sk",
+    "name": "전농SK아파트",
+    "aptNameKeyword": "전농SK",
+    "sido": "서울특별시",
+    "sigungu": "동대문구",
+    "dong": "전농동",
+    "lawdCd": "11230",
+    "pros": [
+      "1,830세대 대단지로 커뮤니티·관리가 안정적",
+      "버스 노선이 많고 배차 간격이 짧음",
+      "답십리역(5호선)·청량리역(1호선)을 버스로 짧게 환승 가능"
+    ],
+    "cons": [
+      "도보권에 지하철역이 없어 버스 의존도가 높음",
+      "준공 25년 이상으로 층간소음 등 구축 이슈가 있는 편",
+      "겨울철 난방비 부담이 있고 주차 공간이 부족한 편"
+    ],
+    "kbLandUrl": "https://kbland.kr/se/c/1218"
   }
 ]

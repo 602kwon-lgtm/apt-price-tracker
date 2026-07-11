@@ -25,4 +25,8 @@ export interface ComplexConfig {
   sigungu: string;
   dong: string;
   lawdCd: string;
+  pros?: string[];
+  cons?: string[];
+  naverLandUrl?: string;
+  kbLandUrl?: string;
 }

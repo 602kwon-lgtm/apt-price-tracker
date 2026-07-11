@@ -13,9 +13,32 @@
   --gold: #a8792f;
   --wine: #7a3b56;
 
-  --font-display: "Gowun Batang", "Noto Serif KR", serif;
-  --font-body: "Gowun Dodum", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --jade-soft: #dceee7;
+  --gold-soft: #f2e4c9;
+  --wine-soft: #ecdbe3;
+
+  --font-display: var(--font-body), "Apple SD Gothic Neo", sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --jade-soft: #1c3830;
+    --gold-soft: #3a3021;
+    --wine-soft: #3a2530;
+  }
+}
+
+:root[data-theme="dark"] {
+  --jade-soft: #1c3830;
+  --gold-soft: #3a3021;
+  --wine-soft: #3a2530;
+}
+
+:root[data-theme="light"] {
+  --jade-soft: #dceee7;
+  --gold-soft: #f2e4c9;
+  --wine-soft: #ecdbe3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -81,6 +104,8 @@ body {
   color: var(--ink);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -91,6 +116,7 @@ h1,
 h2,
 h3 {
   font-family: var(--font-display);
+  font-weight: 800;
   text-wrap: balance;
   margin: 0;
 }
@@ -209,9 +235,10 @@ h3 {
 }
 
 .registry-meta {
-  margin-top: 8px;
+  margin-top: 10px;
   display: flex;
-  gap: 18px;
+  flex-wrap: wrap;
+  gap: 8px;
   font-family: var(--font-mono);
   font-size: 13px;
   color: var(--ink-2);
@@ -235,8 +262,22 @@ h3 {
 .card {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 4px;
+  border-radius: 16px;
   padding: 20px 22px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--surface-sunken);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 13px;
+}
+
+.chip-jade {
+  background: var(--jade-soft);
 }
 
 .back-link {
@@ -267,18 +308,33 @@ h3 {
 
 .hero-stats {
   display: flex;
-  gap: 32px;
+  gap: 12px;
   flex-wrap: wrap;
-  margin: 28px 0 32px;
-  padding: 22px 0;
-  border-top: 1px solid var(--line-strong);
-  border-bottom: 1px solid var(--line-strong);
+  margin: 24px 0 32px;
+}
+
+.hero-stat {
+  flex: 1 1 180px;
+  border-radius: 14px;
+  padding: 16px 18px;
+}
+
+.hero-stat.sale {
+  background: var(--jade-soft);
+}
+
+.hero-stat.jeonse {
+  background: var(--gold-soft);
+}
+
+.hero-stat.wolse {
+  background: var(--wine-soft);
 }
 
 .hero-stat .label {
-  font-size: 12px;
-  color: var(--ink-muted);
-  letter-spacing: 0.04em;
+  font-size: 13px;
+  color: var(--ink-2);
+  letter-spacing: 0.02em;
   margin-bottom: 6px;
 }
 
@@ -409,8 +465,8 @@ input[type="month"] {
   color: var(--ink);
   background: var(--bg);
   border: 1px solid var(--line-strong);
-  border-radius: 3px;
-  padding: 5px 8px;
+  border-radius: 999px;
+  padding: 5px 12px;
 }
 
 .pill {
@@ -419,8 +475,8 @@ input[type="month"] {
   color: var(--ink-2);
   background: var(--bg);
   border: 1px solid var(--line-strong);
-  border-radius: 3px;
-  padding: 5px 12px;
+  border-radius: 999px;
+  padding: 5px 14px;
   cursor: pointer;
 }
 
@@ -452,4 +508,94 @@ input[type="month"] {
   padding: 48px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* ---------- pros/cons + external links ---------- */
+
+.side-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 560px) {
+  .side-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pros-cons-card h3 {
+  font-size: 15px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pros-cons-card.pros {
+  background: var(--jade-soft);
+}
+
+.pros-cons-card.cons {
+  background: var(--wine-soft);
+}
+
+.pros-cons-card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13.5px;
+  color: var(--ink-2);
+  line-height: 1.5;
+}
+
+.pros-cons-card li {
+  padding-left: 18px;
+  position: relative;
+}
+
+.pros-cons-card.pros li::before {
+  content: "＋";
+  position: absolute;
+  left: 0;
+  color: var(--jade);
+  font-weight: 700;
+}
+
+.pros-cons-card.cons li::before {
+  content: "－";
+  position: absolute;
+  left: 0;
+  color: var(--wine);
+  font-weight: 700;
+}
+
+.ext-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.ext-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 7px 16px;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.ext-link:hover {
+  border-color: var(--jade);
+  background: var(--jade-soft);
 }
