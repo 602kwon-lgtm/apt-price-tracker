@@ -1,8 +1,26 @@
+import fs from "node:fs";
+import path from "node:path";
 import { loadComplexes } from "../lib/complexes";
 import { fetchSaleTrades, fetchRentTrades, recentYearMonths } from "../lib/molit";
 import { mergeAndWriteTrades } from "../lib/store";
 
 const FULL_BACKFILL_START_YM = "200601"; // 실거래가 공개 시작 시점
+
+/** .env가 있으면 읽어 process.env에 채운다 (CI 등 이미 환경변수가 설정된 곳에서는 조용히 무시). */
+function loadDotEnvIfPresent() {
+  const envPath = path.join(process.cwd(), ".env");
+  if (!fs.existsSync(envPath)) return;
+
+  for (const line of fs.readFileSync(envPath, "utf-8").split("\n")) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("#")) continue;
+    const eq = trimmed.indexOf("=");
+    if (eq === -1) continue;
+    const key = trimmed.slice(0, eq).trim();
+    const value = trimmed.slice(eq + 1).trim().replace(/^["']|["']$/g, "");
+    if (!(key in process.env)) process.env[key] = value;
+  }
+}
 
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -29,6 +47,7 @@ function parseMonthsBack(): string[] {
 }
 
 async function main() {
+  loadDotEnvIfPresent();
   const serviceKey = process.env.MOLIT_API_KEY;
   if (!serviceKey) {
     throw new Error("MOLIT_API_KEY 환경변수가 설정되어 있지 않습니다. .env 파일을 확인하세요.");

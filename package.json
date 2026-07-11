@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "fetch-data": "node --env-file=.env --import tsx scripts/fetch-data.ts"
+    "fetch-data": "node --import tsx scripts/fetch-data.ts"
   },
   "dependencies": {
     "fast-xml-parser": "^4.5.0",
