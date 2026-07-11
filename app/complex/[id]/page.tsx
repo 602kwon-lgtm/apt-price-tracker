@@ -25,6 +25,10 @@ export default function ComplexPage({ params }: { params: { id: string } }) {
     complex.naverLandUrl ?? `https://search.naver.com/search.naver?query=${encodeURIComponent(`${complex.name} 아파트 시세`)}`;
   const kbUrl =
     complex.kbLandUrl ?? `https://search.naver.com/search.naver?query=${encodeURIComponent(`${complex.name} KB부동산 시세`)}`;
+  const walkMapUrl =
+    complex.address && complex.nearestStation
+      ? `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(complex.address)}&destination=${encodeURIComponent(complex.nearestStation)}&travelmode=walking`
+      : undefined;
 
   return (
     <main>
@@ -36,6 +40,22 @@ export default function ComplexPage({ params }: { params: { id: string } }) {
         <h1>{complex.name}</h1>
         <p className="place">
           📍 {complex.sido} {complex.sigungu} {complex.dong}
+          {complex.nearestStation && complex.walkMinutes && (
+            <>
+              {" "}
+              · 🚇 {complex.nearestStation} 도보 {complex.walkMinutes}분
+              {walkMapUrl && (
+                <>
+                  {" "}
+                  (
+                  <a href={walkMapUrl} target="_blank" rel="noopener noreferrer">
+                    구글맵 경로
+                  </a>
+                  )
+                </>
+              )}
+            </>
+          )}
         </p>
       </div>
 
@@ -44,21 +64,29 @@ export default function ComplexPage({ params }: { params: { id: string } }) {
           <div className="label">🏢 최근 매매</div>
           <div className="value" style={{ color: "var(--jade)" }}>
             {latestSale ? (latestSale.amount / 10000).toFixed(2) : "-"}
-            <span className="unit">억 · {latestSale?.dealDate ?? "거래 없음"}</span>
+            <span className="unit">
+              억 · {latestSale?.dealDate ?? "거래 없음"}
+              {latestSale && ` · ${latestSale.excluUseAr}㎡`}
+            </span>
           </div>
         </div>
         <div className="hero-stat jeonse">
           <div className="label">🔑 최근 전세</div>
           <div className="value" style={{ color: "var(--gold)" }}>
             {latestJeonse ? (latestJeonse.amount / 10000).toFixed(2) : "-"}
-            <span className="unit">억 · {latestJeonse?.dealDate ?? "거래 없음"}</span>
+            <span className="unit">
+              억 · {latestJeonse?.dealDate ?? "거래 없음"}
+              {latestJeonse && ` · ${latestJeonse.excluUseAr}㎡`}
+            </span>
           </div>
         </div>
         <div className="hero-stat wolse">
           <div className="label">🏡 최근 월세</div>
           <div className="value" style={{ color: "var(--wine)" }}>
             {latestWolse ? `${(latestWolse.amount / 10000).toFixed(1)}/${latestWolse.monthlyRent}` : "-"}
-            <span className="unit">{latestWolse ? `만원 · ${latestWolse.dealDate}` : "거래 없음"}</span>
+            <span className="unit">
+              {latestWolse ? `만원 · ${latestWolse.dealDate} · ${latestWolse.excluUseAr}㎡` : "거래 없음"}
+            </span>
           </div>
         </div>
       </div>

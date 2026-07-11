@@ -304,6 +304,11 @@ h3 {
   font-size: 14px;
 }
 
+.detail-heading .place a {
+  color: var(--jade);
+  text-decoration: underline;
+}
+
 /* hero stat */
 
 .hero-stats {

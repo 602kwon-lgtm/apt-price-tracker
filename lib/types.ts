@@ -30,4 +30,7 @@ export interface ComplexConfig {
   cons?: string[];
   naverLandUrl?: string;
   kbLandUrl?: string;
+  address?: string;
+  nearestStation?: string;
+  walkMinutes?: string;
 }

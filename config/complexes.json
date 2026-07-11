@@ -17,7 +17,10 @@
       "단지 인근에 지하철역이 없어 입지 평점이 상대적으로 낮음"
     ],
     "naverLandUrl": "https://fin.land.naver.com/map?layer=NobwRAlgJmBcYGMD2BbADgGwKYA8D6UWALgIYQZgA0YaJATiSgM5zjLrY4CSM8ATAFYAHHwDsYAL7UmWeggAWABXqMWscKQBGcMEQYA7JiQREISfZIkBdIA&center=3zjHxA-2ANquy&zoom=14.99585123356702",
-    "kbLandUrl": "https://kbland.kr/c/15985?xy=37.5993665,127.026085,16"
+    "kbLandUrl": "https://kbland.kr/c/15985?xy=37.5993665,127.026085,16",
+    "address": "37.5993665,127.026085",
+    "nearestStation": "길음역",
+    "walkMinutes": "12"
   },
   {
     "id": "dapsimni-cheongsol-usung",
@@ -39,7 +42,10 @@
       "지하철역까지 거리가 있어 도보 이용이 불편함"
     ],
     "naverLandUrl": "https://naver.me/G0pE5tMQ",
-    "kbLandUrl": "https://kbland.kr/se/c/1224"
+    "kbLandUrl": "https://kbland.kr/se/c/1224",
+    "address": "서울특별시 동대문구 전농로10길 20",
+    "nearestStation": "답십리역",
+    "walkMinutes": "16"
   },
   {
     "id": "raemian-crecielle-jongam",
@@ -60,7 +66,10 @@
       "동에 따라 채광 편차가 있는 편"
     ],
     "naverLandUrl": "https://naver.me/FORqUHDX",
-    "kbLandUrl": "https://kbland.kr/se/c/12026"
+    "kbLandUrl": "https://kbland.kr/se/c/12026",
+    "address": "서울특별시 성북구 종암로25길 30",
+    "nearestStation": "길음역",
+    "walkMinutes": "10"
   },
   {
     "id": "jongam-ipark-1cha",
@@ -80,7 +89,10 @@
       "준공 20년이 넘어 새시 등 개별 수선이 필요한 세대가 많음"
     ],
     "naverLandUrl": "https://naver.me/FdqpM9Zr",
-    "kbLandUrl": "https://kbland.kr/se/c/12550"
+    "kbLandUrl": "https://kbland.kr/se/c/12550",
+    "address": "서울특별시 성북구 종암로21길 127",
+    "nearestStation": "길음역",
+    "walkMinutes": "7"
   },
   {
     "id": "jeonnong-sk",
@@ -101,7 +113,10 @@
       "겨울철 난방비 부담이 있고 주차 공간이 부족한 편"
     ],
     "naverLandUrl": "https://naver.me/xAfg8eHl",
-    "kbLandUrl": "https://kbland.kr/se/c/1218"
+    "kbLandUrl": "https://kbland.kr/se/c/1218",
+    "address": "서울특별시 동대문구 사가정로 148",
+    "nearestStation": "청량리역",
+    "walkMinutes": "15"
   },
   {
     "id": "wolgok-doosan-we-ve",
@@ -123,7 +138,10 @@
       "준공 20년 이상으로 건물 노후도가 있는 편"
     ],
     "naverLandUrl": "https://naver.me/574R22al",
-    "kbLandUrl": "https://kbland.kr/se/c/12029"
+    "kbLandUrl": "https://kbland.kr/se/c/12029",
+    "address": "서울특별시 성북구 오패산로 46",
+    "nearestStation": "월곡역",
+    "walkMinutes": "10"
   },
   {
     "id": "imun-daelim-eplus-world",
@@ -145,7 +163,10 @@
       "저층은 채광이 부족하고 겨울철 추위를 타는 편"
     ],
     "naverLandUrl": "https://naver.me/5jXecLdc",
-    "kbLandUrl": "https://kbland.kr/se/c/12003"
+    "kbLandUrl": "https://kbland.kr/se/c/12003",
+    "address": "서울특별시 동대문구 한천로63길 10",
+    "nearestStation": "신이문역",
+    "walkMinutes": "5"
   },
   {
     "id": "imun-ssangyong",
@@ -158,14 +179,16 @@
     "lawdCd": "11230",
     "pros": [
       "1,318세대 15개동 규모의 대단지",
-      "대림e-편한세상과 같은 이문동 권역으로 생활 인프라 공유",
-      "2000년 11월 준공으로 이문e-편한세상보다 신축급"
+      "신이문역(1호선) 도보 4분, 외대앞역 도보 9분으로 더블 역세권",
+      "대림e-편한세상과 같은 이문동 권역으로 생활 인프라 공유"
     ],
     "cons": [
-      "준공 25년 이상으로 구축 이슈 가능성",
-      "역세권과는 다소 거리가 있는 편"
+      "준공 25년 이상으로 구축 이슈 가능성"
     ],
     "naverLandUrl": "https://naver.me/xNpg64L2",
-    "kbLandUrl": "https://kbland.kr/se/c/1246"
+    "kbLandUrl": "https://kbland.kr/se/c/1246",
+    "address": "서울특별시 동대문구 한천로58길 47",
+    "nearestStation": "신이문역",
+    "walkMinutes": "4"
   }
 ]
