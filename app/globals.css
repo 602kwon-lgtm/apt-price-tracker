@@ -18,7 +18,7 @@
   --wine-soft: #ecdbe3;
 
   --font-display: var(--font-body), "Apple SD Gothic Neo", sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+  --font-mono: var(--font-body), "Apple SD Gothic Neo", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

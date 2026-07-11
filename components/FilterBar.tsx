@@ -39,11 +39,39 @@ export default function FilterBar({
   const cliffActive = filters.dateFrom === TRANSACTION_CLIFF_RANGE.from && filters.dateTo === TRANSACTION_CLIFF_RANGE.to;
   const recent3 = recentMonthsRange(3);
   const recent3Active = filters.dateFrom === recent3.from && filters.dateTo === recent3.to;
+  const recent12 = recentMonthsRange(12);
+  const recent12Active = filters.dateFrom === recent12.from && filters.dateTo === recent12.to;
 
   return (
     <div className="card" style={{ marginBottom: 20 }}>
       <div className="filter-group">
         <span className="filter-label">계약일</span>
+        <button
+          className={`pill${filters.dateFrom === "" && filters.dateTo === "" ? " active" : ""}`}
+          onClick={() => onChange({ ...filters, dateFrom: "", dateTo: "" })}
+        >
+          전체 기간
+        </button>
+        <button
+          className={`pill${recent3Active ? " active" : ""}`}
+          onClick={() => onChange({ ...filters, dateFrom: recent3.from, dateTo: recent3.to })}
+        >
+          최근 3개월
+        </button>
+        <button
+          className={`pill${recent12Active ? " active" : ""}`}
+          onClick={() => onChange({ ...filters, dateFrom: recent12.from, dateTo: recent12.to })}
+        >
+          최근 1년
+        </button>
+        <button
+          className={`pill${cliffActive ? " active" : ""}`}
+          onClick={() =>
+            onChange({ ...filters, dateFrom: TRANSACTION_CLIFF_RANGE.from, dateTo: TRANSACTION_CLIFF_RANGE.to })
+          }
+        >
+          거래절벽시기 (21.11~23.07)
+        </button>
         <input
           type="month"
           value={filters.dateFrom}
@@ -55,26 +83,6 @@ export default function FilterBar({
           value={filters.dateTo}
           onChange={(e) => onChange({ ...filters, dateTo: e.target.value })}
         />
-        <button
-          className={`pill${filters.dateFrom === "" && filters.dateTo === "" ? " active" : ""}`}
-          onClick={() => onChange({ ...filters, dateFrom: "", dateTo: "" })}
-        >
-          전체 기간
-        </button>
-        <button
-          className={`pill${cliffActive ? " active" : ""}`}
-          onClick={() =>
-            onChange({ ...filters, dateFrom: TRANSACTION_CLIFF_RANGE.from, dateTo: TRANSACTION_CLIFF_RANGE.to })
-          }
-        >
-          거래절벽시기 (21.11~23.07)
-        </button>
-        <button
-          className={`pill${recent3Active ? " active" : ""}`}
-          onClick={() => onChange({ ...filters, dateFrom: recent3.from, dateTo: recent3.to })}
-        >
-          최근 3개월
-        </button>
       </div>
 
       <div className="filter-group">

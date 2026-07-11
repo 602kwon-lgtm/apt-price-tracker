@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
 const nanumSquare = localFont({
@@ -13,12 +12,6 @@ const nanumSquare = localFont({
   variable: "--font-body",
 });
 
-const mono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-mono",
-});
-
 export const metadata: Metadata = {
   title: "아파트 실거래가 트래커",
   description: "관심 아파트 단지의 매매/전세/월세 실거래가를 매일 업데이트합니다.",
@@ -26,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" className={`${nanumSquare.variable} ${mono.variable}`}>
+    <html lang="ko" className={nanumSquare.variable}>
       <body>
         <div className="site">
           <header className="masthead">

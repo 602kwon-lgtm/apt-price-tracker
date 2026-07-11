@@ -53,7 +53,9 @@ async function main() {
     throw new Error("MOLIT_API_KEY 환경변수가 설정되어 있지 않습니다. .env 파일을 확인하세요.");
   }
 
-  const complexes = loadComplexes();
+  const onlyArg = process.argv.find((a) => a.startsWith("--only="));
+  const onlyIds = onlyArg ? new Set(onlyArg.split("=")[1].split(",")) : null;
+  const complexes = loadComplexes().filter((c) => !onlyIds || onlyIds.has(c.id));
   const yearMonths = parseMonthsBack();
 
   console.log(`대상 단지 ${complexes.length}개, 조회 기간 ${yearMonths.length}개월 (${yearMonths.at(-1)} ~ ${yearMonths[0]})`);
