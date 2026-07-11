@@ -1,9 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import type { Trade } from "@/lib/types";
+import type { TradeFilters } from "@/lib/filters";
 import PriceChart from "./PriceChart";
 import TradeTable from "./TradeTable";
+import FilterBar, { applyFilters, useAreaGroups } from "./FilterBar";
 
 const TABS = [
   { key: "sale", label: "매매", color: "var(--series-sale)" },
@@ -11,12 +13,25 @@ const TABS = [
   { key: "wolse", label: "월세", color: "var(--series-wolse)" },
 ] as const;
 
+const EMPTY_FILTERS: TradeFilters = {
+  dateFrom: "",
+  dateTo: "",
+  areaGroupKeys: new Set(),
+  floorTiers: new Set(),
+};
+
 export default function ComplexTabs({ trades }: { trades: Trade[] }) {
   const [tab, setTab] = useState<(typeof TABS)[number]["key"]>("sale");
+  const [filters, setFilters] = useState<TradeFilters>(EMPTY_FILTERS);
 
-  const filtered = trades
-    .filter((t) => t.type === tab)
-    .sort((a, b) => (a.dealDate < b.dealDate ? -1 : 1));
+  const areaGroups = useAreaGroups(trades);
+
+  const byType = useMemo(
+    () => trades.filter((t) => t.type === tab).sort((a, b) => (a.dealDate < b.dealDate ? -1 : 1)),
+    [trades, tab],
+  );
+
+  const filtered = useMemo(() => applyFilters(byType, filters, areaGroups), [byType, filters, areaGroups]);
 
   const activeMeta = TABS.find((t) => t.key === tab)!;
 
@@ -36,6 +51,8 @@ export default function ComplexTabs({ trades }: { trades: Trade[] }) {
           );
         })}
       </div>
+
+      <FilterBar filters={filters} onChange={setFilters} areaGroups={areaGroups} resultCount={filtered.length} />
 
       {tab !== "wolse" && (
         <div className="card" style={{ marginBottom: 20 }}>
