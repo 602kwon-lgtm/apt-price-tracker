@@ -30,6 +30,18 @@
     "aptNm": "래미안크리시엘",
     "dong": "종암동",
     "jibun": "80",
+    "excluUseAr": 59.99,
+    "floor": 13,
+    "buildYear": 2004,
+    "dealDate": "2026-07-04",
+    "amount": 101000,
+    "monthlyRent": 0
+  },
+  {
+    "type": "sale",
+    "aptNm": "래미안크리시엘",
+    "dong": "종암동",
+    "jibun": "80",
     "excluUseAr": 114.98,
     "floor": 7,
     "buildYear": 2004,
