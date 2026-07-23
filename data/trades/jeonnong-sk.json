@@ -1,5 +1,19 @@
 [
   {
+    "type": "jeonse",
+    "aptNm": "전농SK",
+    "dong": "전농동",
+    "jibun": "10",
+    "excluUseAr": 59.96,
+    "floor": 18,
+    "buildYear": 2000,
+    "dealDate": "2026-07-22",
+    "amount": 55000,
+    "monthlyRent": 0,
+    "contractTerm": "26.10~28.10",
+    "contractType": "신규"
+  },
+  {
     "type": "wolse",
     "aptNm": "전농SK(임대)",
     "dong": "전농동",
