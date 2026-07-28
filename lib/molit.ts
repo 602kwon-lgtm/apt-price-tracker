@@ -56,10 +56,11 @@ function normalize(s: string): string {
   return s.replace(/\s+/g, "").toLowerCase();
 }
 
-export function matchesComplex(aptNm: string, keyword: string, excludeKeyword?: string): boolean {
+export function matchesComplex(aptNm: string, keyword: string, excludeKeyword?: string | string[]): boolean {
   const normalized = normalize(String(aptNm));
   if (!normalized.includes(normalize(keyword))) return false;
-  if (excludeKeyword && normalized.includes(normalize(excludeKeyword))) return false;
+  const excludes = excludeKeyword ? (Array.isArray(excludeKeyword) ? excludeKeyword : [excludeKeyword]) : [];
+  if (excludes.some((ex) => normalized.includes(normalize(ex)))) return false;
   return true;
 }
 
@@ -68,7 +69,7 @@ export async function fetchSaleTrades(
   lawdCd: string,
   dealYmd: string,
   aptNameKeyword: string,
-  excludeKeyword?: string,
+  excludeKeyword?: string | string[],
 ): Promise<Trade[]> {
   const items = await callApi(TRADE_URL, serviceKey, lawdCd, dealYmd);
   const filtered = items.filter((it) => matchesComplex(String(it.aptNm ?? ""), aptNameKeyword, excludeKeyword));
@@ -97,7 +98,7 @@ export async function fetchRentTrades(
   lawdCd: string,
   dealYmd: string,
   aptNameKeyword: string,
-  excludeKeyword?: string,
+  excludeKeyword?: string | string[],
 ): Promise<Trade[]> {
   const items = await callApi(RENT_URL, serviceKey, lawdCd, dealYmd);
   const filtered = items.filter((it) => matchesComplex(String(it.aptNm ?? ""), aptNameKeyword, excludeKeyword));

@@ -284,5 +284,34 @@
     "walkMinutes": "9",
     "walkMeters": "594",
     "kakaoWalkUrl": "https://map.kakao.com/?map_type=TYPE_MAP&target=walk&rt=515134,1143953,514499,1143176&rt1=%ED%95%9C%EC%A7%84%ED%95%9C%ED%99%94%EA%B7%B8%EB%9E%91%EB%B9%8C&rt2=%EC%84%9D%EA%B3%84%EC%97%AD&rtIds=,&rtTypes=,"
+  },
+  {
+    "id": "dapsimni-doosan-1cha",
+    "name": "답십리두산1단지",
+    "aptNameKeyword": "두산",
+    "excludeKeyword": ["위브", "임대", "베어스타워"],
+    "sido": "서울특별시",
+    "sigungu": "동대문구",
+    "dong": "답십리동",
+    "lawdCd": "11230",
+    "pros": [
+      "739세대 규모, 동대문·청계천이 가까워 상권·나들이가 편리",
+      "다양한 평형(79~141㎡)으로 구성돼 선택지가 넓음"
+    ],
+    "cons": [
+      "가장 가까운 답십리역(5호선)까지 도보 19분(1.2km)으로 역세권과는 거리가 있음",
+      "준공 26년차로 노후도가 있고, 베란다 낀 방은 냉난방이 약한 편"
+    ],
+    "news": [
+      "서울 경전철 면목선 전농역 예정(인근 교통 호재)",
+      "청량리역 GTX-C 등 10개 노선 결절점 개발과 연계 기대",
+      "장안동 일대 52만㎡ 지구단위계획 지정, 천호대로변 최고 120m 개발 추진"
+    ],
+    "kbLandUrl": "https://kbland.kr/se/c/1223",
+    "address": "서울특별시 동대문구 답십리로56길 21",
+    "nearestStation": "답십리역",
+    "walkMinutes": "19",
+    "walkMeters": "1200",
+    "kakaoWalkUrl": "https://map.kakao.com/?map_type=TYPE_MAP&target=walk&rt=513293,1130496,511609,1129847&rt1=%EB%91%90%EC%82%B01%EB%8B%A8%EC%A7%80&rt2=%EB%8B%B5%EC%8B%AD%EB%A6%AC%EC%97%AD&rtIds=,&rtTypes=,"
   }
 ]
