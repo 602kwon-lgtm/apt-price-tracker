@@ -68,6 +68,18 @@
     "monthlyRent": 0
   },
   {
+    "type": "sale",
+    "aptNm": "전농SK",
+    "dong": "전농동",
+    "jibun": "10",
+    "excluUseAr": 84.95,
+    "floor": 1,
+    "buildYear": 2000,
+    "dealDate": "2026-07-11",
+    "amount": 118000,
+    "monthlyRent": 0
+  },
+  {
     "type": "wolse",
     "aptNm": "전농SK",
     "dong": "전농동",
