@@ -60,6 +60,18 @@
     "aptNm": "대림e-편한세상",
     "dong": "이문동",
     "jibun": "225",
+    "excluUseAr": 59.958,
+    "floor": 2,
+    "buildYear": 2003,
+    "dealDate": "2026-07-18",
+    "amount": 103500,
+    "monthlyRent": 0
+  },
+  {
+    "type": "sale",
+    "aptNm": "대림e-편한세상",
+    "dong": "이문동",
+    "jibun": "225",
     "excluUseAr": 84.972,
     "floor": 21,
     "buildYear": 2003,

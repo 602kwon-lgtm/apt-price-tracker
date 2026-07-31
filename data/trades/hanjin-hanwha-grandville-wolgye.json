@@ -212,6 +212,18 @@
     "aptNm": "한진한화그랑빌",
     "dong": "월계동",
     "jibun": "18",
+    "excluUseAr": 139.08,
+    "floor": 25,
+    "buildYear": 2002,
+    "dealDate": "2026-07-04",
+    "amount": 128000,
+    "monthlyRent": 0
+  },
+  {
+    "type": "sale",
+    "aptNm": "한진한화그랑빌",
+    "dong": "월계동",
+    "jibun": "18",
     "excluUseAr": 84.97,
     "floor": 15,
     "buildYear": 2002,
