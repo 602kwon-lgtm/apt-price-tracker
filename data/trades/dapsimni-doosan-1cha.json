@@ -1,5 +1,19 @@
 [
   {
+    "type": "jeonse",
+    "aptNm": "두산",
+    "dong": "답십리동",
+    "jibun": "990",
+    "excluUseAr": 59.96,
+    "floor": 7,
+    "buildYear": 2000,
+    "dealDate": "2026-08-12",
+    "amount": 46200,
+    "monthlyRent": 0,
+    "contractTerm": "26.09~28.09",
+    "contractType": "갱신"
+  },
+  {
     "type": "wolse",
     "aptNm": "두산",
     "dong": "답십리동",

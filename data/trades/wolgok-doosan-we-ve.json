@@ -1,5 +1,19 @@
 [
   {
+    "type": "wolse",
+    "aptNm": "월곡두산위브",
+    "dong": "하월곡동",
+    "jibun": "222",
+    "excluUseAr": 59.855,
+    "floor": 16,
+    "buildYear": 2003,
+    "dealDate": "2026-08-08",
+    "amount": 3700,
+    "monthlyRent": 150,
+    "contractTerm": "26.08~28.08",
+    "contractType": "갱신"
+  },
+  {
     "type": "jeonse",
     "aptNm": "월곡두산위브",
     "dong": "하월곡동",

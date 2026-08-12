@@ -4,6 +4,18 @@
     "aptNm": "쌍용",
     "dong": "이문동",
     "jibun": "64",
+    "excluUseAr": 59.99,
+    "floor": 11,
+    "buildYear": 2000,
+    "dealDate": "2026-08-08",
+    "amount": 104300,
+    "monthlyRent": 0
+  },
+  {
+    "type": "sale",
+    "aptNm": "쌍용",
+    "dong": "이문동",
+    "jibun": "64",
     "excluUseAr": 84.89,
     "floor": 11,
     "buildYear": 2000,

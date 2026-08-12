@@ -1,5 +1,19 @@
 [
   {
+    "type": "jeonse",
+    "aptNm": "래미안세레니티",
+    "dong": "종암동",
+    "jibun": "133",
+    "excluUseAr": 59.97,
+    "floor": 17,
+    "buildYear": 2009,
+    "dealDate": "2026-08-12",
+    "amount": 52500,
+    "monthlyRent": 0,
+    "contractTerm": "26.09~28.09",
+    "contractType": "갱신"
+  },
+  {
     "type": "wolse",
     "aptNm": "래미안세레니티",
     "dong": "종암동",
