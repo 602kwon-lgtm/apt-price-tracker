@@ -54,6 +54,18 @@
     "monthlyRent": 0
   },
   {
+    "type": "sale",
+    "aptNm": "두산",
+    "dong": "답십리동",
+    "jibun": "990",
+    "excluUseAr": 59.96,
+    "floor": 11,
+    "buildYear": 2000,
+    "dealDate": "2026-07-27",
+    "amount": 106000,
+    "monthlyRent": 0
+  },
+  {
     "type": "wolse",
     "aptNm": "두산",
     "dong": "답십리동",
