@@ -4,6 +4,34 @@
     "aptNm": "대림e-편한세상",
     "dong": "이문동",
     "jibun": "225",
+    "excluUseAr": 59.958,
+    "floor": 8,
+    "buildYear": 2003,
+    "dealDate": "2026-08-22",
+    "amount": 46000,
+    "monthlyRent": 0,
+    "contractTerm": "26.09~28.09",
+    "contractType": "갱신"
+  },
+  {
+    "type": "jeonse",
+    "aptNm": "대림e-편한세상",
+    "dong": "이문동",
+    "jibun": "225",
+    "excluUseAr": 59.958,
+    "floor": 9,
+    "buildYear": 2003,
+    "dealDate": "2026-08-22",
+    "amount": 47000,
+    "monthlyRent": 0,
+    "contractTerm": "26.10~28.10",
+    "contractType": "갱신"
+  },
+  {
+    "type": "jeonse",
+    "aptNm": "대림e-편한세상",
+    "dong": "이문동",
+    "jibun": "225",
     "excluUseAr": 84.972,
     "floor": 6,
     "buildYear": 2003,
@@ -119,6 +147,18 @@
     "buildYear": 2003,
     "dealDate": "2026-07-25",
     "amount": 125000,
+    "monthlyRent": 0
+  },
+  {
+    "type": "sale",
+    "aptNm": "대림e-편한세상",
+    "dong": "이문동",
+    "jibun": "225",
+    "excluUseAr": 84.972,
+    "floor": 9,
+    "buildYear": 2003,
+    "dealDate": "2026-07-25",
+    "amount": 123000,
     "monthlyRent": 0
   },
   {
