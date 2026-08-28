@@ -106,6 +106,18 @@
     "contractType": "갱신"
   },
   {
+    "type": "sale",
+    "aptNm": "두산",
+    "dong": "답십리동",
+    "jibun": "990",
+    "excluUseAr": 59.96,
+    "floor": 1,
+    "buildYear": 2000,
+    "dealDate": "2026-07-17",
+    "amount": 101300,
+    "monthlyRent": 0
+  },
+  {
     "type": "jeonse",
     "aptNm": "두산",
     "dong": "답십리동",
