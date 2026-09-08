@@ -32,6 +32,20 @@
     "aptNm": "한진한화그랑빌",
     "dong": "월계동",
     "jibun": "18",
+    "excluUseAr": 75.81,
+    "floor": 9,
+    "buildYear": 2002,
+    "dealDate": "2026-09-01",
+    "amount": 49400,
+    "monthlyRent": 0,
+    "contractTerm": "26.11~28.11",
+    "contractType": "갱신"
+  },
+  {
+    "type": "jeonse",
+    "aptNm": "한진한화그랑빌",
+    "dong": "월계동",
+    "jibun": "18",
     "excluUseAr": 59.94,
     "floor": 7,
     "buildYear": 2002,
@@ -274,6 +288,18 @@
     "monthlyRent": 185,
     "contractTerm": "26.10~28.10",
     "contractType": "갱신"
+  },
+  {
+    "type": "sale",
+    "aptNm": "한진한화그랑빌",
+    "dong": "월계동",
+    "jibun": "18",
+    "excluUseAr": 84.97,
+    "floor": 14,
+    "buildYear": 2002,
+    "dealDate": "2026-08-07",
+    "amount": 125000,
+    "monthlyRent": 0
   },
   {
     "type": "wolse",
