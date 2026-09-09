@@ -1,5 +1,19 @@
 [
   {
+    "type": "jeonse",
+    "aptNm": "래미안크리시엘",
+    "dong": "종암동",
+    "jibun": "80",
+    "excluUseAr": 59.99,
+    "floor": 5,
+    "buildYear": 2004,
+    "dealDate": "2026-09-08",
+    "amount": 57000,
+    "monthlyRent": 0,
+    "contractTerm": "26.11~28.11",
+    "contractType": "신규"
+  },
+  {
     "type": "wolse",
     "aptNm": "래미안크리시엘",
     "dong": "종암동",

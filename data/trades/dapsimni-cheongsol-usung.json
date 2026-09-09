@@ -56,6 +56,20 @@
     "contractType": "신규"
   },
   {
+    "type": "wolse",
+    "aptNm": "답십리청솔우성",
+    "dong": "답십리동",
+    "jibun": "80",
+    "excluUseAr": 84.94,
+    "floor": 13,
+    "buildYear": 2000,
+    "dealDate": "2026-08-16",
+    "amount": 60000,
+    "monthlyRent": 20,
+    "contractTerm": "26.10~28.10",
+    "contractType": "신규"
+  },
+  {
     "type": "jeonse",
     "aptNm": "답십리청솔우성",
     "dong": "답십리동",

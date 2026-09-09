@@ -56,6 +56,18 @@
     "contractType": "갱신"
   },
   {
+    "type": "sale",
+    "aptNm": "쌍용",
+    "dong": "이문동",
+    "jibun": "64",
+    "excluUseAr": 84.89,
+    "floor": 9,
+    "buildYear": 2000,
+    "dealDate": "2026-08-19",
+    "amount": 114500,
+    "monthlyRent": 0
+  },
+  {
     "type": "wolse",
     "aptNm": "쌍용",
     "dong": "이문동",
