@@ -4,6 +4,34 @@
     "aptNm": "한진한화그랑빌",
     "dong": "월계동",
     "jibun": "18",
+    "excluUseAr": 139.08,
+    "floor": 2,
+    "buildYear": 2002,
+    "dealDate": "2026-10-06",
+    "amount": 10500,
+    "monthlyRent": 322,
+    "contractTerm": "26.10~28.10",
+    "contractType": "갱신"
+  },
+  {
+    "type": "jeonse",
+    "aptNm": "한진한화그랑빌",
+    "dong": "월계동",
+    "jibun": "18",
+    "excluUseAr": 59.94,
+    "floor": 11,
+    "buildYear": 2002,
+    "dealDate": "2026-10-06",
+    "amount": 37485,
+    "monthlyRent": 0,
+    "contractTerm": "26.10~28.10",
+    "contractType": "갱신"
+  },
+  {
+    "type": "wolse",
+    "aptNm": "한진한화그랑빌",
+    "dong": "월계동",
+    "jibun": "18",
     "excluUseAr": 84.97,
     "floor": 13,
     "buildYear": 2002,
@@ -40,6 +68,20 @@
     "monthlyRent": 0,
     "contractTerm": "26.12~28.12",
     "contractType": "신규"
+  },
+  {
+    "type": "wolse",
+    "aptNm": "한진한화그랑빌",
+    "dong": "월계동",
+    "jibun": "18",
+    "excluUseAr": 84.97,
+    "floor": 4,
+    "buildYear": 2002,
+    "dealDate": "2026-09-29",
+    "amount": 2000,
+    "monthlyRent": 162,
+    "contractTerm": "26.10~28.10",
+    "contractType": "갱신"
   },
   {
     "type": "jeonse",
@@ -122,6 +164,20 @@
     "dealDate": "2026-09-15",
     "amount": 140000,
     "monthlyRent": 0
+  },
+  {
+    "type": "wolse",
+    "aptNm": "한진한화그랑빌",
+    "dong": "월계동",
+    "jibun": "18",
+    "excluUseAr": 84.97,
+    "floor": 26,
+    "buildYear": 2002,
+    "dealDate": "2026-09-14",
+    "amount": 10000,
+    "monthlyRent": 175,
+    "contractTerm": "26.11~28.11",
+    "contractType": "갱신"
   },
   {
     "type": "wolse",
@@ -480,6 +536,20 @@
     "monthlyRent": 185,
     "contractTerm": "26.10~28.10",
     "contractType": "갱신"
+  },
+  {
+    "type": "wolse",
+    "aptNm": "한진한화그랑빌",
+    "dong": "월계동",
+    "jibun": "18",
+    "excluUseAr": 84.97,
+    "floor": 17,
+    "buildYear": 2002,
+    "dealDate": "2026-08-08",
+    "amount": 40000,
+    "monthlyRent": 100,
+    "contractTerm": "26.10~28.10",
+    "contractType": "신규"
   },
   {
     "type": "sale",
