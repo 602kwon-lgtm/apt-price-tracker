@@ -1,5 +1,19 @@
 [
   {
+    "type": "jeonse",
+    "aptNm": "대림e-편한세상",
+    "dong": "이문동",
+    "jibun": "225",
+    "excluUseAr": 84.972,
+    "floor": 17,
+    "buildYear": 2003,
+    "dealDate": "2026-10-07",
+    "amount": 62500,
+    "monthlyRent": 0,
+    "contractTerm": "26.10~28.10",
+    "contractType": "갱신"
+  },
+  {
     "type": "wolse",
     "aptNm": "대림e-편한세상",
     "dong": "이문동",
