@@ -98,6 +98,20 @@
     "contractType": "갱신"
   },
   {
+    "type": "jeonse",
+    "aptNm": "한진한화그랑빌",
+    "dong": "월계동",
+    "jibun": "18",
+    "excluUseAr": 114.97,
+    "floor": 7,
+    "buildYear": 2002,
+    "dealDate": "2026-10-08",
+    "amount": 66150,
+    "monthlyRent": 0,
+    "contractTerm": "26.10~28.11",
+    "contractType": "갱신"
+  },
+  {
     "type": "sale",
     "aptNm": "한진한화그랑빌",
     "dong": "월계동",
