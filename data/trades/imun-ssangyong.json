@@ -1,5 +1,19 @@
 [
   {
+    "type": "jeonse",
+    "aptNm": "쌍용",
+    "dong": "이문동",
+    "jibun": "64",
+    "excluUseAr": 59.99,
+    "floor": 19,
+    "buildYear": 2000,
+    "dealDate": "2026-11-01",
+    "amount": 42000,
+    "monthlyRent": 0,
+    "contractTerm": "27.02~29.02",
+    "contractType": "갱신"
+  },
+  {
     "type": "wolse",
     "aptNm": "쌍용",
     "dong": "이문동",
