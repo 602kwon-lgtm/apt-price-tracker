@@ -1,5 +1,19 @@
 [
   {
+    "type": "jeonse",
+    "aptNm": "아이파크종암동1차",
+    "dong": "종암동",
+    "jibun": "130",
+    "excluUseAr": 59.73,
+    "floor": 12,
+    "buildYear": 2004,
+    "dealDate": "2026-11-17",
+    "amount": 58000,
+    "monthlyRent": 0,
+    "contractTerm": "27.01~29.01",
+    "contractType": "신규"
+  },
+  {
     "type": "sale",
     "aptNm": "아이파크종암동1차",
     "dong": "종암동",
