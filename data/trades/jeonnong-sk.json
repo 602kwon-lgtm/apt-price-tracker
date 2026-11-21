@@ -268,6 +268,20 @@
     "contractType": "갱신"
   },
   {
+    "type": "wolse",
+    "aptNm": "전농SK",
+    "dong": "전농동",
+    "jibun": "10",
+    "excluUseAr": 84.95,
+    "floor": 1,
+    "buildYear": 2000,
+    "dealDate": "2026-10-12",
+    "amount": 32000,
+    "monthlyRent": 100,
+    "contractTerm": "26.10~28.10",
+    "contractType": "갱신"
+  },
+  {
     "type": "jeonse",
     "aptNm": "전농SK",
     "dong": "전농동",
