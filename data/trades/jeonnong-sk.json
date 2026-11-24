@@ -1,5 +1,19 @@
 [
   {
+    "type": "jeonse",
+    "aptNm": "전농SK",
+    "dong": "전농동",
+    "jibun": "10",
+    "excluUseAr": 59.34,
+    "floor": 16,
+    "buildYear": 2000,
+    "dealDate": "2026-11-18",
+    "amount": 40950,
+    "monthlyRent": 0,
+    "contractTerm": "26.11~28.11",
+    "contractType": "갱신"
+  },
+  {
     "type": "wolse",
     "aptNm": "전농SK",
     "dong": "전농동",
@@ -292,6 +306,20 @@
     "dealDate": "2026-10-10",
     "amount": 65000,
     "monthlyRent": 0
+  },
+  {
+    "type": "jeonse",
+    "aptNm": "전농SK",
+    "dong": "전농동",
+    "jibun": "10",
+    "excluUseAr": 84.95,
+    "floor": 18,
+    "buildYear": 2000,
+    "dealDate": "2026-10-10",
+    "amount": 65000,
+    "monthlyRent": 0,
+    "contractTerm": "26.11~28.11",
+    "contractType": "신규"
   },
   {
     "type": "wolse",
