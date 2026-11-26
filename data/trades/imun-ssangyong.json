@@ -1,5 +1,17 @@
 [
   {
+    "type": "sale",
+    "aptNm": "쌍용",
+    "dong": "이문동",
+    "jibun": "64",
+    "excluUseAr": 84.89,
+    "floor": 18,
+    "buildYear": 2000,
+    "dealDate": "2026-11-19",
+    "amount": 116000,
+    "monthlyRent": 0
+  },
+  {
     "type": "jeonse",
     "aptNm": "쌍용",
     "dong": "이문동",

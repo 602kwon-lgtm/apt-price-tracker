@@ -4,6 +4,20 @@
     "aptNm": "전농SK",
     "dong": "전농동",
     "jibun": "10",
+    "excluUseAr": 114.3,
+    "floor": 17,
+    "buildYear": 2000,
+    "dealDate": "2026-11-25",
+    "amount": 73000,
+    "monthlyRent": 0,
+    "contractTerm": "27.01~29.01",
+    "contractType": "갱신"
+  },
+  {
+    "type": "jeonse",
+    "aptNm": "전농SK",
+    "dong": "전농동",
+    "jibun": "10",
     "excluUseAr": 59.34,
     "floor": 16,
     "buildYear": 2000,
@@ -39,6 +53,32 @@
     "amount": 55000,
     "monthlyRent": 0,
     "contractTerm": "27.01~29.01",
+    "contractType": "신규"
+  },
+  {
+    "type": "sale",
+    "aptNm": "전농SK",
+    "dong": "전농동",
+    "jibun": "10",
+    "excluUseAr": 59.96,
+    "floor": 19,
+    "buildYear": 2000,
+    "dealDate": "2026-11-07",
+    "amount": 116500,
+    "monthlyRent": 0
+  },
+  {
+    "type": "jeonse",
+    "aptNm": "전농SK",
+    "dong": "전농동",
+    "jibun": "10",
+    "excluUseAr": 114.3,
+    "floor": 24,
+    "buildYear": 2000,
+    "dealDate": "2026-11-07",
+    "amount": 70000,
+    "monthlyRent": 0,
+    "contractTerm": "26.12~28.12",
     "contractType": "신규"
   },
   {
